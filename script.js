@@ -16,8 +16,7 @@ window.onmousemove = e => {
   gallery.animate({
     transform: `translate(${panX}px, ${panY}px)`
   }, {
-    duration: 20000,
-    fill: "forwards",
+    duration: 30000,
     easing: "ease"
   })
 }
