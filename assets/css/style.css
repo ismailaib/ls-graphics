@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #313131;
+    font-family: 'Roboto', sans-serif;
+  }
+
+body,html {
+    background: var(--bg-color);
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    overflow-x: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 3%;
+}
+nav .logo a {
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+nav .logo span {
+    color: #26e998;
+}
+.nav-sections {
+    display: flex;
+    transition: 300ms;
+    gap: 2rem;
+}
+.nav-signup a,
+.nav-sections a {
+    color: rgb(39, 39, 39);
+    transition: all 300ms ease;
+}
+.nav-signup a:hover,
+.nav-sections a:hover {
+    color: black;
+    font-weight: 400;
+}
+.nav-signup {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+.nav-signup button {
+    background: #26e998;
+    border: none;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    color: white;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+.nav-signup button:hover {
+    background: #ffffff;
+    border: 2px solid #26e998;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 5px;
+    color: #26e998;
+    cursor: pointer;
+}
