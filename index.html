@@ -6,25 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>E-Wallet.com</title>
+    <!--icon-->
+    <link href='https://unpkg.com/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <!--=============== Nav-bar ================ -->
-    <nav>
-        <div class="logo">
-            <a href="#logo"><span>E-</span>Wallet.</a>
-        </div>
-        <div class="nav-sections">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Contact</a>
-        </div>
-        <div class="nav-signup">
-            <a href="#">Login</a>
-            <button>Sign-up</button>
-        </div>
-    </nav>
+    <header>
+        <a href="#" class="logo">E-<span>Wallet</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>        
+            <li><a href="#about">About</a></li>         
+            <li><a href="#testimonials">Testimonials</a></li>            
+            <li><a href="#services">Services</a></li>           
+            <li><a href="#contactme" id="contact">Contact</a></li>           
+        </ul>
+    </header>
     <!--=============== Home ================-->
     <section id="home" class="home">
         <div class="home-content">
@@ -41,5 +38,6 @@
             </div>
         </div>
     </section>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
