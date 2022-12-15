@@ -13,7 +13,7 @@ body,html {
     background: #ffffff;
     scroll-behavior: smooth;
     scroll-padding-top: 2rem;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 header {
     position: fixed;
@@ -129,7 +129,7 @@ header {
     display: none;
   }
   section {
-    padding: 20% 0 10%;
+    padding: 10% 0 10%;
   }
 h5 {
   color: #39bda7;
@@ -138,12 +138,14 @@ h5 {
 h1 {
   font-size: 8.5rem;
     color: black;
+    z-index: 9999;
 }
 .intro {
   display: grid;
   align-items: center;
   grid-template-columns: 25% 50% 25%;
   justify-items: center;
+  height: 100vh;
 }
 .intro-center {
   display: flex;
@@ -184,10 +186,40 @@ p {
   transform: translate(0.05em, 0.05em);
   box-shadow: 0.05em 0.05em #39bda7;
  }
+ img {
+  width: 100%;
+  background: #e7e7e7;
+  box-shadow: 3px 4px 50px #dfdddd;
+  padding: 15%;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.intro-right .svg-1 {
+  transform: translateX(109px) rotate(23deg);
+}
+.intro-right .svg-1:hover{
+  transform: translateX(109px) rotate(0);
+  width: 110%;
+}
+.intro-right .svg-2 {
+  transform: rotate(30deg);
+}
+.intro-right .svg-2:hover{
+  transform: translateX(109px) rotate(0);
+  width: 110%;
+}
+.intro-left .svg-3 {
+  transform: rotate(10deg);
+}
+.intro-left .svg-3:hover{
+  transform: translateX(-100px) rotate(0);
+  width: 110%;
+}
+
 
 @media screen and (max-width: 1430px) {
     header{
-        padding: 60px 10%;
+        padding: 20px 10%;
     }
     :root{
       --big-font: 3rem;
@@ -250,3 +282,35 @@ p {
         margin: 10px;
     }
   }  
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 25% 0 10%;
+  }
+    p {
+      z-index: 9999;
+  }
+}  
+@media screen and (max-width: 660px) {
+  section {
+    padding: 25% 0 10%;
+}
+p {
+  font-size: 15px;
+  z-index: 9999;
+}
+h1 {
+  font-size: 6.5rem;
+}
+}  
+@media screen and (max-width: 425px) {
+  section {
+    padding: 32% 0 10%;
+}
+p {
+  font-size: 20px;
+  z-index: 9999;
+}
+h1 {
+  font-size: 5.5rem;
+}
+}  
