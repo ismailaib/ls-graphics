@@ -172,7 +172,6 @@ p {
   font-size: 18px;
   border: 3px solid white;
   border-radius: 0.4em;
-  box-shadow: 0.1em 0.1em #39bda7;
   margin: 25px;
   cursor: pointer;
   transition: all 300ms ease-in-out;
@@ -180,25 +179,23 @@ p {
  
  .main-button:hover {
   transform: translate(-0.05em, -0.05em);
-  box-shadow: 0.25em 0.25em #39bda7;
  }
  
  .main-button:active {
   transform: translate(0.05em, 0.05em);
-  box-shadow: 0.05em 0.05em #39bda7;
  }
  img {
   width: 100%;
-  background: #e7e7e7;
-  box-shadow: 3px 4px 50px #dfdddd;
+  background: #e7e7e74d;
   padding: 15%;
+  border-radius: 14px;
+  border: 1px solid #99979b;
   cursor: pointer;
   transition: all 300ms ease;
 }
 .intro-center img {
   width: 50%;
   background: #e7e7e7;
-  box-shadow: 3px 4px 50px #dfdddd;
   padding: 15%;
   cursor: pointer;
   transition: all 300ms ease;
@@ -208,14 +205,13 @@ p {
 }
 .intro-right .svg-1:hover{
   transform: translateX(109px) rotate(0);
-  width: 110%;
+  background: #ffffffaf;
 }
 .intro-right .svg-2 {
   transform: rotate(30deg);
 }
-.intro-right .svg-2:hover{
-  transform: translateX(109px) rotate(0);
-  width: 110%;
+.intro-right .svg-2:hover {
+  transform: rotate(50deg);
 }
 .intro-center .svg-2 {
   transform: rotate(30deg);
@@ -224,14 +220,15 @@ p {
 .intro-center .svg-2:hover{
   transform: translateX(109px) rotate(0);
   width: 50%;
-  
+  background: #ffffffaf;
 }
 .intro-left .svg-3 {
+  position: inherit;
+  z-index: -999;
   transform: rotate(10deg);
 }
 .intro-left .svg-3:hover{
   transform: translateX(-100px) rotate(0);
-  width: 110%;
 }
 
 
@@ -333,3 +330,19 @@ h1 {
   font-size: 5.5rem;
 }
 }  
+.items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  padding: 0% 5% 10%;
+  height: auto;
+}
+.card {
+  background: #e7e7e775;
+  border: 1px solid #2a2725;
+  border-radius: 14px;
+}
+.card img {
+  background: none;
+  border: none; 
+}
